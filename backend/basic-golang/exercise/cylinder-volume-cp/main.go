@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 // Check Point:
@@ -17,5 +18,16 @@ import (
 // - Jadi volumenya adalah : 251.200012
 
 func main() {
-	// TODO: answer here
+
+	var jari, tinggi, volume float32
+
+	fmt.Print("Masukkan jari-jari alas tabung : ")
+	fmt.Scanln(&jari)
+
+	fmt.Print("Masukkan tinggi tabung : ")
+	fmt.Scanln(&tinggi)
+
+	volume = math.Pi * jari * jari * tinggi
+
+	fmt.Println("Jadi volumenya adalah : ", volume)
 }
