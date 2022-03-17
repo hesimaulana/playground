@@ -25,6 +25,15 @@ func main() {
 	var size int
 	fmt.Print("Size: ")
 	fmt.Scanf("%d", &size)
+	for i := size; i >= 1; i-- {
+		for j := size; j > i; j-- {
+			fmt.Print(" ")
+		}
+		for k := 1; k <= i; k++ {
+			fmt.Print("*")
+		}
+		fmt.Println("")
+	}
 
 	// TODO: answer here
 }
