@@ -8,7 +8,10 @@ func main() {
 	//mengembalikan nilai parameter x
 
 	counter := func(x int) func() int {
-		// TODO: answer here
+		return func() int {
+			x -= 1
+			return x
+		}
 	}
 	decrement := counter(5)
 	fmt.Println(decrement())

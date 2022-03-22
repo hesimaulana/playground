@@ -10,4 +10,6 @@ func main() {
 
 }
 
-// TODO: answer here
+func goodAfternoon(nama1 string, nama2 string) {
+	fmt.Printf("Selamat sore %s dan %s\n", nama1, nama2)
+}
