@@ -17,6 +17,10 @@ type SubjectScore struct {
 
 func GetMaxScore(student *Student) int {
 	// TODO: answer here
+	if student.SubjectScore.Scores == nil {
+		println("kosong")
+		return 0
+	}
 	maxScore := 0
 	for _, score := range student.SubjectScore.Scores {
 		if score > maxScore {

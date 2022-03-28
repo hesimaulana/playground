@@ -9,7 +9,17 @@ import "fmt"
 // GetPerimeter() digunakan untuk menampilkan (print) keliling persegi panjang
 
 type Rectangle struct {
-	// TODO: answer here
+	Width  int
+	Length int
+}
+
+func (r Rectangle) GetArea() {
+	area := r.Width * r.Length
+	fmt.Printf("%d \n", area)
+}
+func (r Rectangle) GetPerimeter() {
+	area := (2 * r.Width) + (2 * r.Length)
+	fmt.Printf("%d", area)
 }
 
 // TODO: answer here
