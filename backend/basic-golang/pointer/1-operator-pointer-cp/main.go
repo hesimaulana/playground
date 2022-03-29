@@ -10,5 +10,16 @@ func main() {
 	age := 20
 	isMarried := true
 
+	nameAddress := &name
+	ageAddress := &age
+	isMarriedAddress := &isMarried
+
+	fmt.Printf("%v \n", nameAddress)
+	fmt.Printf("%v \n", ageAddress)
+	fmt.Printf("%v \n", isMarriedAddress)
+
+	fmt.Printf("%s \n", *nameAddress)
+	fmt.Printf("%d \n", *ageAddress)
+	fmt.Printf("%t", *isMarriedAddress)
 	// TODO: answer here
 }
